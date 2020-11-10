@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+        document.write('Hello world');
+    </script>
+    <input type="button" id="night-day" value="night" onclick="
+      var target = document.querySelector('body').style
+      if (this.value === 'night') {
+        target.backgroundColor = 'black';
+        target.color = 'white';
+        this.value = 'day';
+      } else {
+        target.backgroundColor = 'white';
+        target.color = 'black';
+        this.value = 'night';
+      }
+    ">
+    <!--
+    <input type="text" onchange="alert('changed!')">
+    <input type="text" onkeydown="alert('key down.')">
+    -->
+
+  </body>
+</html>
